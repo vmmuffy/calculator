@@ -1,0 +1,54 @@
+<head>
+   <title>Calculator</title>
+   <link rel="stylesheet" href="./style/index.css" />
+   <script src="./scripts/index.js"></script>
+   <script src="https://kit.fontawesome.com/ebb927db94.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="screen-calculator">
+   <p id="screen-calculator-result"></p>
+   <p id="screen-calculator-count"></p>
+  </div>
+  <div class="screen-keyboard">
+    <div class="grid-container">
+      <div class="grid-item" onClick="changeCalculatorDisplay(7)">7</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(8)">8</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(9)">9</div>  
+      <div 
+       class="grid-item grid-item-operator" onClick="changeCalculatorDisplay('/')"
+      >÷</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(4)">4</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(5)">5</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(6)">6</div>  
+      <div 
+       class="grid-item grid-item-operator" onClick="changeCalculatorDisplay('*')"
+      >x</div>  
+      <div class="grid-item" onClick="changeCalculatorDisplay(1)">1</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(2)">2</div>
+      <div class="grid-item" onClick="changeCalculatorDisplay(3)">3</div>  
+      <div 
+       class="grid-item grid-item-operator" onClick="changeCalculatorDisplay('-')"
+      >-</div>  
+      <div class="grid-item" onClick="changeCalculatorDisplay(0)">0</div>  
+      <div 
+      class="grid-item" onClick="changeCalculatorDisplay('.')"
+      >.</div>
+      <div class="grid-item"></div>
+      <div 
+          class="grid-item grid-item-operator" onClick="changeCalculatorDisplay('+')"
+      >+</div>
+    </div>
+    <div class="button-container">
+        <div 
+          class="button-item delete-button" 
+          onClick="deleteValue()"
+        ><i class="fas fa-backspace"></i>
+        </div>
+        <div 
+          onClick="getResult()"
+          class="button-item result-button"
+        >=
+        </div>  
+    </div>
+  </div>
+</body>
